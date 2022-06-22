@@ -1,0 +1,184 @@
+@import "variables";
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    background-color: $veryPaleBlue;
+    overflow: hidden;
+    font-family: $redhat;
+}
+
+
+.svg{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @media (max-width:650px){
+        background-color: $veryPaleBlue;
+        display: none;
+    }
+
+}
+
+.container{
+    width: 24rem;
+    background-color: $white;
+    z-index: 100;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .upper{
+        width: 100%;
+        height:14rem ;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .lower{
+        padding: 2rem;
+        margin-bottom: 0.5rem;
+
+        .text{
+            margin-bottom: 0.3rem;
+            h1{
+                font-size: 1.7rem;
+                font-weight: 700;
+                color: $darkBlue;
+                margin-bottom: 0.3rem;
+            }
+
+            p{
+                font-size: 1rem;
+                font-weight: 500;
+                color:$desaturatedBlue;
+                padding:0.3rem;
+            }
+        }
+
+        .plan{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            background-color: $veryPaleBlue;
+            padding:0.5rem 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+
+            .left{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                &_text{
+                    margin-left: 0.5rem;
+                    h1{
+                        font-weight: 700;
+                        font-size: 0.9rem;
+                        color: $darkBlue;
+
+                    }
+                    p{
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                        color: $desaturatedBlue;
+                    }
+                }
+            }
+            &_change{
+                a{
+                    color: $brightBlue;
+                    font-weight: 900;
+                    font-size: 0.8rem;
+                    transition: color 0.3s ease-in-out;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        color: $lightBrightBlue;
+                    }
+                }
+            }
+        }
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 1.5rem;
+
+            &_payment{
+                button{
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 1rem 0.5rem;
+                    font-weight: 900;
+                    font-size: 0.9rem;
+                    font-family: $redhat;
+                    color: $white;
+                    background-color: $brightBlue;
+                    transition: background-color 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: $lightBrightBlue;
+                    }
+                }
+            }
+
+            &_cancel{
+                margin-top: 1rem;
+                button{
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    font-family: $redhat;
+                    color: $desaturatedBlue;
+                    cursor: pointer;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover{
+                        color: $darkBlue;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    @media (max-width:650px){
+        width: 20rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+}
+
