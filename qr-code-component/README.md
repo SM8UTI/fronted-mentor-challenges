@@ -6,6 +6,24 @@ Problem Link : [Link](https://www.frontendmentor.io/challenges/qr-code-component
 
 My Solution Link : [link](https://sm8uti.github.io/fronted-mentor-challenges/qr-code-component/)
 
+
+<br/>
+
+## Variables
+
+```scss
+$white:hsl(0, 0%, 100%);
+$lightGray:hsl(212, 45%, 89%);
+$grayishBlue:hsl(220, 15%, 55%);
+$darkBlue:hsl(218, 44%, 22%);
+
+$outfit:'Outfit',sans-serif;
+
+```
+
+<br/>
+
+
 ## File Structure :
 <br/>
 
@@ -42,14 +60,6 @@ My Solution Link : [link](https://sm8uti.github.io/fronted-mentor-challenges/qr-
 
 <br/>
 
-## Variables :
-
-```scss
-$white:hsl(0, 0%, 100%);
-$lightGray:hsl(212, 45%, 89%);
-$grayishBlue:hsl(220, 15%, 55%);
-$darkBlue:hsl(218, 44%, 22%);
-
-$outfit:'Outfit',sans-serif;
-
-```
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/SM8UTI">SM8UTI</a>.

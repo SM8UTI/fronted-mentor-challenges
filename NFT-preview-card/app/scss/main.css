@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 20rem;
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 1rem;
+  border-radius: 15px;
+}
+.container .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.container .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.container .image div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: hsla(178deg, 100%, 50%, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.container .image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.container .image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.container .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .text .heading {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.container .text .heading h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container .text .heading h1:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+.container .text .heading p {
+  margin-top: 0.3rem;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.container .text .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.container .text .status .eth {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.container .text .status .eth p {
+  margin-left: 0.3rem;
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+}
+.container .text .status .time {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+.container .text .status .time p {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+.container .text .status::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  border-bottom: 2px solid hsl(215deg, 32%, 27%);
+}
+.container .text .profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+.container .text .profile img {
+  width: 2.5rem;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 500px;
+}
+.container .text .profile p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.container .text .profile p span {
+  color: hsl(0deg, 0%, 100%);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container .text .profile p span:hover {
+  color: hsl(178deg, 100%, 50%);
+}/*# sourceMappingURL=main.css.map */
