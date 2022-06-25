@@ -38,7 +38,7 @@ body {
   }
 }
 .container .image {
-  width: 75rem;
+  width: 55rem;
 }
 .container .image img {
   width: 100%;
@@ -68,6 +68,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: hsl(228deg, 12%, 48%);
+  letter-spacing: 2px;
 }
 .container .text__heading {
   margin-bottom: 2rem;
