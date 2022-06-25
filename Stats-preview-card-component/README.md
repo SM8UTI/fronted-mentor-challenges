@@ -25,6 +25,7 @@ $statHeding:hsla(0, 0%, 100%, 0.6);
 //Font-Family :
 
 $inter: 'Inter',sans-serif;
+
 $lexend: 'Lexend Deca',sans-serif;
 
 
