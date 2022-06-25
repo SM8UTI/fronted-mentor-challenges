@@ -1,5 +1,5 @@
 
-<img src="app/images/design/desktop-design.jpg" height="300px"  width="100%" style="object-fit:cover">
+<img src="app/images/design/desktop-design.jpg" height="500px"  width="100%" style="object-fit:cover">
 
 <br/>
 
