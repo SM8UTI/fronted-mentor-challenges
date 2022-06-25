@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+@import "variables";
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: $montserrat;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $Cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: $White;
+    margin: 0 auto;
+    width:40rem ;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width:500px){
+        flex-direction: column;
+        width: 25rem;
+    }
+
+    .image{
+
+        width:40rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width:500px) {
+            width: 100%;
+            height: 15rem;
+            background-position: center;
+        }
+
+    }
+
+    .text{
+        padding: 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        &__categories{
+            margin-bottom: 2rem;
+            h1{
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $DarkGrayishBlue;
+            }
+        }
+
+        &__heading{
+            margin-bottom: 2rem;
+            h1{
+                font-size: 2.4rem;
+                font-family: $fraunces;
+                color: $VeryDarkBlue;
+
+            }
+        }
+
+        &__details{
+            margin-bottom: 2rem;
+
+            p{
+                color: $DarkGrayishBlue;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }
+
+        &__price{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 2rem;
+
+            h1{
+                color: $DarkCyan;
+                font-family: $fraunces;
+                font-weight: 700;
+                font-size: 2.5rem;
+                margin-right: 1.5rem;
+
+            }
+
+            span{
+                text-decoration: line-through;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $DarkGrayishBlue;
+            }
+        }
+
+        &__button{
+            width: 100%;
+
+            button{
+                width: 100%;
+                color: $White;
+                border: 0;
+                outline: none;
+                border-radius: 5px;
+                background-color: $DarkCyan;
+                padding: 1rem 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                column-gap: 0.5rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+
+                span{
+                    font-family: $montserrat;
+                    font-weight: 700;
+                    font-size: 1rem;
+                }
+
+                &:hover{
+                    background-color: $HoverDarkCyan;
+                }
+            }
+        }
+    }
+
+    
+}
