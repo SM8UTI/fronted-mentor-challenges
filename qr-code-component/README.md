@@ -1,6 +1,6 @@
 ## Qr Code Component ( Frontend Mentor Solution)
 
-`Html` `SCSS`
+`Html` `SCSS` 
 
 
 
