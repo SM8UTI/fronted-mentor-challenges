@@ -2,9 +2,6 @@
 
 `Html` `SCSS` 
 
-
-
-
 ### Problem Link : [Link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 ### My Solution Link : [link](https://sm8uti.github.io/fronted-mentor-challenges/qr-code-component/)
