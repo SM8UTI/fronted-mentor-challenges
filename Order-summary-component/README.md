@@ -33,6 +33,8 @@ $redhat:'Red Hat Display',sans-serif;
 
 // image
 
+
+
 $desktopBackground:url(app/images/pattern-background-desktop.svg);
 ```
 
