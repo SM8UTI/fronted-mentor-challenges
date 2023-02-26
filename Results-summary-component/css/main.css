@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    /* colors  */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+
+    /* fonts family  */
+    --ffp: 'Hanken Grotesk',
+        sans-serif;
+
+}
+
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body,html{
+    width: 100%;
+}
+
+body{
+    font-family: var(--ffp);
+    background-color: var(--White);
+    display: grid;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 3.375rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+
+h3{
+    font-size: 1.125rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.975rem;
+    line-height: 1.7;
+}
+
+
+
+.resultCard .left{
+    background:linear-gradient(180deg,var(--LightSlateBlue),var(--LightRoyalBlue));
+    color: var(--White);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 2rem 3rem;
+    border-radius:  0 0 2rem 2rem;
+
+}
+
+.resultCard .circle{
+    display: inline-block;
+    width: 160px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background:linear-gradient(180deg,var(--VioletBlue),transparent);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resultCard .left h3,p,span{
+    color: var(--LightLavender);
+}
+
+.resultCard .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resultCard .right{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.resultCard .summary-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resultCard .summary-container .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem !important;
+}
+
+
+
+.resultCard .summary-container .item:first-child{
+    color: var(--LightRed);
+    background-color:#FFF6F5;
+}
+.resultCard .summary-container .item:nth-child(2){
+    color: var(--OrangeyYellow);
+    background-color:#FFFBF2;
+}
+.resultCard .summary-container .item:nth-child(3){
+    color: var(--GreenTeal);
+    background-color:#F2FBFA;
+}
+.resultCard .summary-container .item:last-child{
+    color: var(--CobaltBlue);
+    background-color:#F3F3FD;
+}
+
+
+
+.resultCard .summary-container .item .score h4{
+    color: #000 !important;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.resultCard .summary-container .item .score h4 span{
+    margin-left: 3px;
+    font-weight: 500;
+}
+
+.resultCard .summary-container .item .text{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+button{
+    background: linear-gradient(90deg, var(--DarkGrayBlue), var(--DarkGrayBlue));
+    color: var(--White);
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+button:hover{
+    background: linear-gradient(90deg, var(--LightSlateBlue), var(--LightRoyalBlue));
+
+}
+
+
+@media (min-width:768px){
+    body{
+        display: grid;
+        place-content: center;
+    }
+    .resultCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 630px;
+        border-radius: 2rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    }
+
+    .resultCard .left{
+        width: 48%;
+        border-radius: 2rem;
+    }
+
+    .resultCard .right{
+        width: 50%;
+    }
+}
